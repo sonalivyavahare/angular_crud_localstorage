@@ -1,0 +1,33 @@
+.container {
+    font-family: Roboto, Poppins !important;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(0, 0, 0, 0.1);
+  }
+  .container .header-text h1 {
+    color: #027b70;
+    font-family: Roboto, Poppins;
+    font-weight: 400;
+  }
+  .form-control {
+    margin: 30px auto;
+  }
+  .btn-submit {
+    background-color: #027b70;
+    color: white;
+  }
+  p > span > a {
+    color: #027b70;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .alert {
+    color: green;
+    padding: 10px 50px;
+    background-color: lightgreen;
+  }
+  

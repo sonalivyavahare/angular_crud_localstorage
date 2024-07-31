@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="registration">
+    <div class="header-text">
+      <h1>Registration</h1>
+    </div>
+    <div class="form">
+      @if(isUserRegisterd){
+      <div class="alert">User Registered Successfully! Please Login!</div>
+      }
+      <form #regForm="ngForm" (ngSubmit)="register(regForm)">
+        <input
+          type="text"
+          placeholder="Name"
+          class="form-control"
+          name="name"
+          ngModel
+        />
+        <input
+          type="text"
+          placeholder="Username"
+          class="form-control"
+          name="username"
+          ngModel
+        />
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          name="password"
+          ngModel
+        />
+        <button type="submit" class="form-control btn btn-submit">
+          Sign Up
+        </button>
+        <p>
+          Already have an account?
+          <span><a routerLink="/login">Sign In</a> </span>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
