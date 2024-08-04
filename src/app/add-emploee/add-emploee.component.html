@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="add-employee">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            ADD
+          </button>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Employee</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form [formGroup]="addEmployeeForm" (ngSubmit)="create(addEmployeeForm)">
+                <div class="modal-body">
+                    @if(sucessMsg != ""){
+                        <div class="alert alert-success">{{sucessMsg}}</div>
+                    }
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Name" formControlName="name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="contact" placeholder="Contact No" formControlName="contact">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="designation" placeholder="Designation" formControlName="designation">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="salary" placeholder="Salary" formControlName="salary">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit"  class="btn btn-primary" >Add</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>

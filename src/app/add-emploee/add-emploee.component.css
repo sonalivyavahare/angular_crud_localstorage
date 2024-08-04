@@ -1,0 +1,25 @@
+.container{
+    margin: 50px auto;
+}
+.add-employee button{
+    float: right;
+    background-color: #027b70;
+    border-color: #027b70;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+.btn-primary{
+    background-color: #027b70;
+    border-color: #027b70;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+.modal-body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.form-control {
+    margin: 30px auto;
+}
